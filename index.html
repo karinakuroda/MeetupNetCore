@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>CSS</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Meetup .NET CORE</h1>
+
+			</section>
+
+
+			<section>
+				<h2>O que é o .NET Core?</h2>
+				<p>
+					O ASP.NET core é a nova estrutura web da Microsoft, redesenhada desde o início para ser rápida, flexível, moderna e trabalhar
+					em diferentes plataformas.
+				</p>
+			</section>
+
+			<!-- VANTAGENS -->
+
+			<section>
+				<section>
+					<h1>Vantagens</h1>
+				</section>
+				<section>
+					<h2>Multi-Plataforma</h2>
+					<p>Windows, Linux, MacOS..</p>
+				</section>
+				<section>
+					<h2>Dotnet CLI - Comando de linha</h2>
+					<p>Não fique amarrado ao Visual Studio</p>
+				</section>
+				<section>
+					<h2>Compatibilidade</h2>
+					<p>Através do netstandard</p>
+				</section>
+				<section>
+					<h2>As linguagens são as mesmas!</h2>
+					<p>Ou seja, C#, F#, VB, estão todas lá!</p>
+				</section>
+				<section>
+					<h2>100% Open Source</h2>
+					<p>https://github.com/dotnet</p>
+				</section>
+			</section>
+
+			<!-- DOTNET CLI -->
+
+			<section>
+				<section>
+					<h2>A Linha de Comando: Seu Ponto de Entrada para o .NET Core</h2>
+
+					<pre><code class="hljs" data-trim contenteditable>
+						dotnet run
+						</code></pre>
+				</section>
+
+				<section>
+					<h3>Alguns comandos</h3>
+					<p>
+						<img data-src="img/1.PNG">
+					</p>
+				</section>
+			</section>
+
+			<!-- compatibilidade-->
+			<section>
+				<section>
+					<h2>Compatibilidade</h2>
+					<p>netstandard</p>
+				</section>
+				<section>
+					<p>
+						O .NET Standard foi criado para que o compartilhamento e a reutilização de código entre várias plataformas .NET se tornem
+						muito mais fáceis.
+
+						<img data-src="img/16.PNG">
+
+					</p>
+				</section>
+
+				<section>
+					<p>
+						Para que o .NET continue evoluindo rapidamente, um padrão foi criado para que todas as versões dos frameworks suportem o
+						mesmo conjunto de APIs.
+						<img data-src="img/NETStandard.jpg">
+					</p>
+				</section>
+				<section>
+					<p>
+						<img data-src="img/14.PNG">
+					</p>
+				</section>
+				<section>
+					<p>
+						A versão 2.0 do .NET Standard suporta 142% mais APIs que a versão anterior. Um salto incrível no número de APIs suportadas.
+						<img data-src="img/15.PNG">
+
+					</p>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h2>E o que muda?</h2>
+					<p>.NET Clássico vs .NET Core</p>
+
+				</section>
+
+				<section>
+					<h3>Project file (csproj)</h3>
+					<ul>
+						<li>
+							É possível editar o arquivo sem fazer “unload” do projeto
+						</li>
+						<li>
+							Mudança na estrutura
+						</li>
+						<li>
+							Não contém nenhuma referência para pastas ou arquivos
+						</li>
+					</ul>
+
+				</section>
+				<section>
+					<div>
+						<img data-src="img/3.PNG" style="clear: both;
+    position: fixed;
+    left: 0px;">
+						<img data-src="img/4.PNG" style="clear: both;
+    position: fixed;">
+					</div>
+				</section>
+				<section>
+					<h3>Serving files</h3>
+					<p>
+						<img data-src="img/5.PNG">
+					</p>
+				</section>
+				<section>
+					<h3>Main Method</h3>
+					<p>
+						<img data-src="img/6.PNG">
+					</p>
+				</section>
+				<section>
+					<p>
+						<img data-src="img/7.PNG">
+					</p>
+				</section>
+					<section>
+					<p>
+						<img data-src="img/8.PNG">
+					</p>
+				</section>
+				<section>
+					<h3>Startup, Pipeline e Middleware</h3>
+					<p>
+						<img data-src="img/9.PNG">
+					</p>
+				</section>
+				<section>
+					<h3>Middleware</h3>
+					<p>
+						<img data-src="img/10.PNG">
+					</p>
+				</section>
+				<section>
+					<h3>Middleware</h3>
+					<p>
+						<img data-src="img/11.PNG">
+					</p>
+				</section>
+			</section>
+			
+
+		
+			<!-- KESTREL -->
+			<section>
+				<section>
+					<h2>Kestrel – Servidor web INTERNO</h2>
+					<p>
+						O Kestrel é um servidor web de código aberto usado para hospedar aplicativos .NET em qualquer plataforma.
+Uma vez que o Kestrel não é um servidor web completo, você deve executá-lo por trás do IIS ou do NGNIX. Ele foi projetado para tornar o ASP.NET o mais rápido possível, mas é limitado em sua capacidade de gerenciar a segurança e servir arquivos estáticos.
+					</p>
+				</section>
+				<section>
+					<h2>Kestrel</h2>
+					<p>
+					<img data-src="img/12.PNG">
+					</p>
+				</section>
+			</section>
+
+				<section>
+				<section>
+					<h2>Iniciando um projeto!</h2>
+					<ul>
+						<li>
+							Download .NET CORE 2.0 
+						</li>
+						<li>
+							Download VSCode/VS2017 Community 
+						</li>
+					</ul>
+					<p>
+						<img data-src="img/17.PNG">
+					</p>
+				</section>
+
+				
+			</section>
+			<section style="text-align: left;">
+				<h1>E o MESSENGER?</h1>
+			</section>
+			<section style="text-align: left;">
+				<h1>FIM! :D</h1>
+			</section>
+
+		
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+
+</body>
+
+</html>

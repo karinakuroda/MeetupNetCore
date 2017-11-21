@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12pt;
+        }
+
+        .place {
+            height: 10em;
+            position: relative;
+            margin: 10px;
+            bottom: 0;
+        }
+
+        h1 {
+            margin: 0;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .place__container>p {
+            margin: 0;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media all and (min-width: 1024px) {
+            .card__container {
+                margin-top: 290px;
+                position: absolute;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .card {
+            display: inline-block;
+            margin: 60px 10px 10px 10px;
+            font: #fff;
+            width: 300px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .card__main {
+            font: #fff;
+            position: relative;
+            z-index: -1;
+        }
+
+        .card__main h2 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+
+        .card__main p {
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+
+        .price {
+            float: left;
+            margin: 0;
+            margin-top: -50px;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="place">
+        <div class="place__container">
+            <h1>Lugares vistos recentemente</h1>
+            <p>Continue de onde parou</p>
+
+            <div class="card__container">
+                <a class="card" href="#">
+                    <div class="card__main">
+                        <img src="img/img1.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Hospedado por Luciana</h2>
+                            <p>Rio de Janeiro</p>
+                        </div>
+                    </div>
+                    <p class="price">R$395</p>
+                </a>
+
+                <a class="card" href="#">
+                    <div class="card__main">
+                        <img src="img/img2.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Hospedado por Igor</h2>
+                            <p>Florianópolis</p>
+                        </div>
+                    </div>
+                    <p class="price">R$200</p>
+                </a>
+
+                <a class="card" href="#">
+                    <div class="card__main">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Hospedado por Loise</h2>
+                            <p>Florianópolis</p>
+                        </div>
+                    </div>
+                    <p class="price">R$551</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
